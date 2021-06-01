@@ -1,0 +1,41 @@
+{%extends "home/layout.html"%}
+{%block body%}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+body {
+    background: lightblue url("img_tree.gif") no-repeat fixed center;
+  
+}
+
+h1 {
+    text-shadow: 2px 2px;
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+
+</html>
+
+    <a href="{% url 'home:login' %}"><center><h5>Login</center></h5></a>
+</br>
+    <a href="{% url 'home:signup' %}"><center><h5>Sign Up</h5></center></a>
+</br>   
+    <a href="{% url 'quiz:index' %}"><center><h5>Quiz</h5></center></a>
+{%endblock%}
+

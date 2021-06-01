@@ -1,0 +1,53 @@
+{% extends 'home/layout.html' %}
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1></h1>
+<p></p>
+
+</body>
+</html>
+
+
+
+    <h2>Login</h2>
+    <form method="post">
+        {% csrf_token %}
+       
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">User name</label>
+              <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+             
+
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+         
+        <button type="submit">Login</button>
+    </form>
+{% endblock %}
